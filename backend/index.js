@@ -4,7 +4,7 @@ const router = require("./router");
 var server = require("http").createServer(app);
 
 const corsOptions = {
-	origin: "http://localhost:3000" || "https://joinchat.netlify.app/",
+	origin: "https://joinchat.netlify.app/",
 	credentials: true,
 	allowedHeaders: "Content-Type",
 };
@@ -16,7 +16,7 @@ app.use(router);
 
 var io = require("socket.io")(server, {
 	cors: {
-		origin: "http://localhost:3000" || "https://joinchat.netlify.app",
+		origin: "https://joinchat.netlify.app/",
 		credentials: true,
 		allowedHeaders: "Content-Type",
 	},
