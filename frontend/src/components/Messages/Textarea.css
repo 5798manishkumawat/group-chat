@@ -1,0 +1,21 @@
+.textScroller::-webkit-scrollbar {
+  width: 0px;
+  height: 18px;
+}
+.textScroller::-webkit-scrollbar-thumb {
+  height: 100px;
+  border: 12px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+.textScroller::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.textScroller::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
