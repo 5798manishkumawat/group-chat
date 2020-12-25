@@ -17,6 +17,7 @@ app.use(router);
 var io = require("socket.io")(server, {
 	cors: {
 		origin: "https://joinchat.netlify.app/",
+		methods: ["GET", "POST"],
 		credentials: true,
 		allowedHeaders: "Content-Type",
 	},
