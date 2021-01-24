@@ -17,7 +17,7 @@ function LiveChat({ location }) {
 	useEffect(() => {
 		const { name, room } = queryString.parse(location.search);
 
-		socket = io("https://powerful-mountain-72313.herokuapp.com/", {
+		socket = io("http://localhost:8080", {
 			transport: ["websocket"],
 		});
 
